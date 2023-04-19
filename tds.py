@@ -11,6 +11,7 @@ def largest(n1,n2,n3):
   elif n2 > n1 and n2 > n3:
     return n2
   else:
+    return n3
 
 if calculate:
   largestn = def largest(n1,n2,n3)
