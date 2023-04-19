@@ -13,6 +13,6 @@ def largest(n1,n2,n3):
   else:
     return n3
 
-if st:
+if st.button("click"):
   largestn = largest(n1,n2,n3)
   st.write("The largest number is: ",largestn)
