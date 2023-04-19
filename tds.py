@@ -14,5 +14,5 @@ def largest(n1,n2,n3):
     return n3
 
 if calculate:
-  largestn = def largest(n1,n2,n3)
+  largestn = largest(n1,n2,n3)
   st.write("The largest number is: ",largestn)
