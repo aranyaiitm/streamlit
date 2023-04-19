@@ -1,18 +1,23 @@
 import streamlit as st
 
-st.title("Find largest number among below three numbers")
-n1 = st.number_input("Enter the 1st number")
-n2 = st.number_input("Enter the 2nd number")
-n3 = st.number_input("Enter the 3rd number")
+def largest_number(a, b, c):
+    if a >= b and a >= c:
+        return a
+    elif b >= a and b >= c:
+        return b
+    else:
+        return c
 
-def largest(n1,n2,n3):
-  if n1 > n2 and n1 > n3:
-    return n1
-  elif n2 > n1 and n2 > n3:
-    return n2
-  else:
-    return n3
+st.title("Find the largest number")
+st.write("Enter three numbers and find the largest among them.")
 
-if calculate:
-  largestn = largest(n1,n2,n3)
-  st.write("The largest number is: ",largestn)
+# Take input from user
+st.sidebar.write("Enter three numbers:")
+a = st.sidebar.text_input("Number 1")
+b = st.sidebar.text_input("Number 2")
+c = st.sidebar.text_input("Number 3")
+
+# Call the function
+if st.sidebar.button("Find the largest number"):
+    result = largest_number(float(a), float(b), float(c))
+    st.write(f"The largest number is {result}."
