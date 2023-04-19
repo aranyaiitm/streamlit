@@ -20,4 +20,4 @@ c = st.sidebar.text_input("Number 3")
 # Call the function
 if st.sidebar.button("Find the largest number"):
     result = largest_number(float(a), float(b), float(c))
-    st.write(f"The largest number is {result}."
+    st.write(f"The largest number is {result}.")
